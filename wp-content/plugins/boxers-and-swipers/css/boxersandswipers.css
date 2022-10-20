@@ -1,0 +1,14 @@
+.container-colorbox { float:left; }
+.container-slimbox { float:left; }
+.container-nivolightbox { float:left; }
+.container-imagelightbox { float:left; }
+.container-photoswipe { float:left; }
+.container-swipebox { float:left; }
+.item-boxersandswipers-settings {
+	width: 250px;
+	height: 70px;
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	border: #CCC 2px solid;
+}

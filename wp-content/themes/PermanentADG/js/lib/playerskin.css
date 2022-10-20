@@ -1,0 +1,110 @@
+.vjs-remaining-time {
+	display:none !important;
+}
+
+
+video-js.boxed-video {
+	//cursor: url('play-color.png'), auto;
+}
+
+.vjs-playing {
+	//cursor: url('pause.png'), auto !important;
+}
+
+.vjs-theme-sea .vjs-big-play-button {
+	width:40px;
+	height:46px;
+	-o-object-fit:contain;
+	object-fit:contain;
+	background-image:url('play-gradient-3.svg');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-color:transparent !important;
+	border:none;
+	border-radius:0;
+	bottom:20px;
+	left:20px;
+	top:auto;
+}
+
+.video-js .vjs-control {
+    width: 3em;
+}
+
+.video-js .vjs-volume-bar {
+    margin: 9px 2px;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+	opacity:0;
+}
+
+.video-js button:focus {
+    outline: white auto 0px;
+}
+
+
+.video-js .vjs-control {
+    background-color: rgba(0,0,0,.7);
+}
+
+.vjs-theme-sea .vjs-control-bar {
+	height:20px;
+	background-color:transparent;
+}
+
+.vjs-theme-sea .vjs-button:hover {
+	color: black;
+    background: white;
+}
+
+.vjs-theme-sea .vjs-button>.vjs-icon-placeholder:before {
+	line-height:1.2;
+}
+
+.vjs-theme-sea .vjs-time-control {
+	line-height:3em;
+}
+
+.vjs-theme-sea .vjs-picture-in-picture-control {
+	display:none;
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-play-progress {
+	background-color:black;
+	background: linear-gradient(135deg, rgba(255,0,0,1) 10%, rgba(0,255,116,1) 50%, rgba(0,74,255,1) 90%);
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-play-progress:before {
+	display:none;
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-slider {
+	background-color:rgba(65,118,188,.1);
+	//background: linear-gradient(135deg, rgba(255,0,0,1) 10%, rgba(0,255,116,1) 50%, rgba(0,74,255,1) 90%);
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-load-progress div {
+	//background:hsla(0,0%,100%,.5);
+	background: transparent;
+	
+}
+
+.video-js .vjs-progress-holder .vjs-load-progress {
+	opacity:0;
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-progress-holder {
+	margin:0;
+	height:100%;
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-time-tooltip {
+	background-color:rgba(65,118,188,.5);
+	color:#fff;
+}
+
+.vjs-theme-sea .vjs-progress-control .vjs-mouse-display .vjs-time-tooltip {
+	background-color:hsla(0,0%,100%,.7);
+	color:#4176bc;
+}
