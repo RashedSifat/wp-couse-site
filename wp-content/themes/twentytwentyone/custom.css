@@ -1,0 +1,12 @@
+.wp-custom-logo .site-header {
+	padding: 0;
+}
+.avatar {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+footer, footer a {
+	background-color: #000;
+	color: #fff;
+}

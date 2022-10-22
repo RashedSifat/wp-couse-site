@@ -654,3 +654,46 @@ if ( ! function_exists( 'wp_get_list_item_separator' ) ) :
 		return __( ', ', 'twentytwentyone' );
 	}
 endif;
+
+
+/* Custom functions */
+function custom_course_post_type() {
+
+	$args = array(
+		'labels' => array(
+			'name' => 'Courses',
+			'singular_name' => 'Course',
+		),
+		'hierarchical' => true,
+		'public' => true,
+		'has_archive' => true,
+		'menu_icon' => 'dashicons-welcome-view-site',
+		'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
+		'rewrite' => array('slug' => 'course'),
+
+	);
+
+	register_post_type('courses', $args);
+}
+add_action('init', 'custom_course_post_type');
+
+
+
+function my_first_taxonomy() {
+
+
+	$args = array(
+
+		// 'labels' => array(
+		// 	'name' => 'Brands',
+		// 	'singular_name' => 'Brand',
+		// ),
+
+		'hierarchical' => true,
+		'public' => true,
+
+	);
+
+	register_taxonomy('brands', array('courses'), $args);
+}
+add_action('init', 'my_first_taxonomy');
