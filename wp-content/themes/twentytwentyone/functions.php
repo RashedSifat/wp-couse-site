@@ -552,6 +552,10 @@ require get_template_directory() . '/inc/block-patterns.php';
 // Block Styles.
 require get_template_directory() . '/inc/block-styles.php';
 
+// Background style
+require get_template_directory() . '/inc/theminimalist-customizer.php';
+new TheMinimalist_Customizer();
+
 // Dark Mode.
 require_once get_template_directory() . '/classes/class-twenty-twenty-one-dark-mode.php';
 new Twenty_Twenty_One_Dark_Mode();

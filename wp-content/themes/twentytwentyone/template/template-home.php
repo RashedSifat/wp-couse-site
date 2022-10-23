@@ -15,19 +15,32 @@
 get_header();
 ?>
 
-<!-- Header Banner Area-->
-<section class="py-0" id="features">
-	<div class="container px-4 px-lg-5">
-		<div class="row gx-4 gx-lg-5 align-items-center my-5">
-			<div class="col-lg-6">
-		        <h2 class="font-weight-light">Learn how to build an audience and monetize your work with courses from SPI</h2>
-		        <p>With topics on branding, email marketing, podcasting, online courses, and webinars, we help beginners transform into pros.</p>
-		    </div>
-		    <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
+<?php 
+	if(get_theme_mod('background-callout-display') === 'Yes') { ?>
 
-		</div>
-	</div>
-</section>
+		<!-- Header Banner Area-->
+		<section class="py-0" id="features">
+			<div class="container px-4 px-lg-5">
+				<div class="row gx-4 gx-lg-5 align-items-center my-5">
+					<div class="col-lg-6">
+				        <h2 class="font-weight-light">
+				        	<?php 
+				        		$bannertext = get_theme_mod('text-callout-display');
+				        		if($bannertext != '') {
+				        			echo $bannertext;
+				        		}
+				        	?>
+				        </h2>
+				        <p>With topics on branding, email marketing, podcasting, online courses, and webinars, we help beginners transform into pros.</p>
+				    </div>
+				    <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="<?php echo wp_get_attachment_url(get_theme_mod('image-callout-display'))?>" alt="Banner image" /></div>
+
+				</div>
+			</div>
+		</section>
+<?php	}
+?>
+
 
 
 <!-- Courses Area-->
